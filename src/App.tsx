@@ -7,13 +7,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1> Zoology Trivia </h1>
-        <a className="startBtn"
-        >
+        <a className="startBtn" href="PlayPage" target="_blank">
           Start
-          </a>
-
-        <a className="highScrBtn"
-        >
+        </a>
+        <a className="highScrBtn" href="highScore" target="_blank">
           High Score
           </a>
         

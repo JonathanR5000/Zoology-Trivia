@@ -1,14 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import HighScore from './highScore';
 import './index.css';
 import App from './App';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(
   <React.StrictMode>
     <Router>
-      <App></App>
+    <Routes>
+          <Route path="/about">
+            {/* <About /> */}
+          </Route>
+          <Route path="/highScore">
+            <HighScore />
+          </Route>
+          <Route path="/">
+            <App />
+          </Route>
+        </Routes>    
     </Router>
   </React.StrictMode>,
   document.getElementById('root')
